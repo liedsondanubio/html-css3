@@ -1,0 +1,19 @@
+body {
+    background-color: beige;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+img {
+    width: 300px;
+}
