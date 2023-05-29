@@ -1,0 +1,80 @@
+@charset "UTF-8"; 
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body h1 {
+    text-align: center;
+    font-variant: small-caps;
+}
+
+fieldset {
+    
+}
+
+#field1 {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.205);
+}
+
+#field1 p {
+    padding: 5px;
+}
+
+#field2 {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.233)
+}
+
+#field2 p {
+    padding: 5px;
+}
+
+#field3 {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.226);
+}
+
+#field3 p {
+    padding: 5px;
+}
+
+#field4 {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.24);
+}
+
+#field4 p {
+    padding: 5px;
+}
+
+#botoes {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.bot1 {
+    padding: 15px;
+    margin: 10px;
+    font-size: 17px;
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.342);
+}
+
+.bot1:hover {
+    background-color:rgb(7, 89, 172);
+    transition: .5s;
+}
