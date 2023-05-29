@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+</head>
+<body>
+    <h1>Insira seus Dados</h1>
+    <form action="/exercicios/Ex025/cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Insira o nome" autocomplete="name">
+        </p>
+        <p>
+            <label for="isobre">Sobrenome</label>
+            <input type="text" name="sobre" id="isobre" required maxlength="30" placeholder="Insira seu sobrenome" autocomplete="off">
+        </p>
+        <p>
+            <label for="inasc">Data de nascimeto</label>
+            <input type="date" name="nasc" id="inasc" required max="4">
+        </p>
+        <p>
+            <label for="icpf">CPF:</label>
+            <input type="number" name="cpf" id="icpf" required maxlength="11" placeholder="Ex:123.345.678-90">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

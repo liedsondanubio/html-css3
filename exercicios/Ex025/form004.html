@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="iname">Nome</label>
+                <input type="text" name="name" id="iname" minlength="5" maxlength="30" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2})\[0-9]{4,5}-[0-9]{4,5}$" required>
+                <!-- o pattern indica um forma padrão para preenchimento do campo.
+                    -A abertura é representada por "^"
+                    -O fechamento por "$"
+                    -O [0-9] (\d) indica que ali será um número.
+                    -Dentro dos {} a quantidade de números permitidos.
+                    -O "-" indica que esse grupo serão separados por hifen.
+                -->
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
