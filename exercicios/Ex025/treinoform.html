@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuário</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: cadetblue;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px;
+            color: white;
+        }
+        
+        form {
+            background-color: darkgoldenrod;
+            display: block;
+            margin: auto;
+            padding: 5px;
+            width: 270px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.603);
+        }
+
+        form p {
+            margin: 5px;
+            text-align: left;
+        }
+        
+        #botoes {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .botoes {
+            background-color: whitesmoke;
+            border: 1px solid rgba(0, 0, 0, 0.37);
+            border-radius: 5px;
+            padding: 6px;
+            margin:5px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.123);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Prontuario Médico</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="ipaciente">Nome do Paciente</label> <br> 
+            <input type="text" name="paciente" id="ipaciente" required maxlength="30" placeholder="Insira o nome do paciente" size="30">
+        </p>
+        <p>
+            <label for="idiag">Diagnostico</label> <br>
+            <input type="text" name="diag" id="idiag" required maxlength="30" size="30" placeholder="Diagnostico do paciente">
+        </p>
+        <p>
+            <label for="idata">Data da Consulta</label> <br>
+            <input type="date" name="data" id="idata" required>
+        </p>
+        <p>
+            <label for="ihora">Hora da Consulta</label> <br>
+            <input type="time" name="hora" id="ihora" required>
+        </p>
+        <div id="botoes">
+            <input class="botoes" type="submit" value="Enviar">
+            <input class="botoes" type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
