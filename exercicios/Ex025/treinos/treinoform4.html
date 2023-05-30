@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="form4.css">
+</head>
+<body>
+    <h1>Cadastrar</h1>
+    <form action="/exercicios/Ex025/cadastro.php" method="post">
+        <fieldset id="field1">
+            <legend>Perfil</legend>
+            <p>
+                <label for="iname">Nome Próprio<b>*</b></label>
+                <input type="text" name="name" id="iname" required placeholder="Digite o seu primeiro nome aqui" size="30" maxlength="30">
+            </p>
+            <p>
+                <label for="isobre">Sobrenome<b>*</b></label>
+                <input type="text" name="sobre" id="isobre" required placeholder="Digite seu sobrenome" maxlength="30" size="30">
+            </p>
+            <p>
+                <label for="inst">Instituição/Afiliacão<b>*</b></label>
+                <input type="text" name="nst" id="inst" required placeholder="Digite o nome da Instituição/Afiliação" maxlength="30" size="30">
+            </p>
+        </fieldset>
+        <fieldset id="field2">
+            <legend>Acesso</legend>
+            <p>
+                <label for="imail">E-mail<b>*</b></label>
+                <input type="email" name="mail" id="imail" required placeholder="Digite seu e-mail" maxlength="30" size="30">
+            </p>
+            <p>
+                <label for="iuser">Usuário<b>*</b></label>
+                <input type="text" name="user" id="iuser" required placeholder="Crie um nome de usuário" size="30" maxlength="30">
+            </p>
+            <p>
+                <label for="ipass">Senha<b>*</b></label>
+                <input type="password" name="pass" id="ipass" required max="10" minlength="5" size="10" placeholder="Crie uma senha">
+            </p>
+            <p>
+                <label for="icpass">Confirme sua senha<b>*</b></label>
+                <input type="password" name="cpass" id="icpass" required maxlength="10" minlength="5" size="25" placeholder="Confirme a senha digitada acima">
+            </p>
+        </fieldset>
+        <fieldset id="field3">
+            <p>
+                <input type="checkbox" name="sim" id="isim"><label for="isim"> Sim, eu concordo em ter meus dados coletados e armazenados de acordo com a <a href="#">declaração de privacidade.</a></label>
+            </p>
+            <p>
+                <input type="checkbox" name="yes" id="iyes"><label for="iyes"> Sim, eu gostaria de ser notificado(a) de novas publicações e notícias.</label>
+            </p>
+        </fieldset>
+        <p id="botoes">
+            <input class="botao"  type="submit" value="Cadastrar">
+            <input class="botao" type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

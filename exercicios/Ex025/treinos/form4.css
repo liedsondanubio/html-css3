@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body h1 {
+    text-align: center;
+}
+
+body b {
+    color: red;
+}
+
+fieldset#field1 {
+    margin: 10px;
+    padding: 15px;
+}
+
+fieldset#field1 p {
+    margin-bottom: 15px;
+}
+
+fieldset#field2 {
+    margin: 10px;
+    padding: 15px;
+}
+
+fieldset#field2 p {
+    margin-bottom: 15px;
+}
+
+fieldset#field3 {
+    margin: 10px;
+    padding: 15px;
+}
+
+fieldset#field3 p {
+    margin-bottom: 15px;
+}
+
+fieldset#field4 {
+    margin: 10px;
+    padding: 15px;
+}
+
+fieldset#field4 p {
+    margin-bottom: 15px;
+}
+
+#botoes {
+    text-align: center;
+}
+
+.botao {
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    background-color: rgb(55, 55, 223);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.botao:hover {
+    background-color: rgb(1, 1, 59);
+    transition: .5s;
+    text-decoration: underline;
+}
