@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-variant: small-caps;
+        }
+
+        body h1 {
+            text-align: center;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    <h1>Informe seus dados</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Dados</legend>
+            <p>
+                <label for="inome">Nome Próprio*:</label>
+                <input type="text" name="nome" id="inome" required placeholder="Digite seu nome">
+            </p>
+            <p>
+                <label for="isobre">Sobrenome*:</label>
+                <input type="text" name="sobre" id="isobre" required placeholder="Digite seu sobrenome">
+            </p>
+            <p>
+                <label for="icpf">CPF (Somente números):</label>
+                <input type="text" name="cpf" id="icpf" required placeholder="xxx.xxx.xxx-xx">
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" required list="iproflis" placeholder="Informe sua profissão">
+                <datalist id="iproflis">
+                    <option value="DEV">Programador</option>
+                    <option value="PROF">Professor</option>
+                    <option value="MED">Médico</option>
+                    <option value="OUT">Outro</option>
+                </datalist>
+            </p>
+            <p> 
+                <label for="iest">Estado:</label>
+                <select name="est" id="ist">
+                    <option value="">---Escolha---</option>
+                    <optgroup label="Região Nordeste">
+                        <option value="AL">Alagoas</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sul">
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Detalhes</legend>
+            <p>
+                <label for="icor">Cor Favorita:</label> <br>
+                <input type="color" name="cor" id="icor">
+            </p>
+            <p>
+                <label for="iespo">Esporte Favorito:</label> <br>
+                <input type="checkbox" name="espor" id="ifut" value="Futebol"> Futebol <br>
+                <input type="checkbox" name="espor" id="ivol" value="Voleibol"> Voleibol
+                <br>
+                <input type="checkbox" name="espor" id="inat" value="Natação"> Natação
+                <br>
+                <input type="checkbox" name="espor" id="ihand" value="Handebol"> Handebol
+                <br>
+                <input type="checkbox" name="espor" id="iout" value="Outros"> Outros
+            </p>
+            <p>
+                <label for="isats">Nível de Satisfação: </label> <br>
+                <input type="range" name="sats" id="isats" min="0"  max="10" oninput="irange.innerHTML = Number(isats.value)">
+                <output id="irange">5</output>
+            </p>
+            <p>
+                <label for="itext">Fale um pouco sobre você para nossa empresa:</label> <br>
+                <textarea name="text" id="itext" cols="30" rows="10" placeholder="Digite aqui."></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Enviar Documentos</legend>
+            <p>
+                Abaixo será disponibilizado um espaço para que seja enviado todos os documentos solicitados para inscrição da vaga.
+            </p>
+            <p>
+                <label for="idocs">Envie seus arquivos:</label> <br>
+                <input type="file" name="docs" id="idocs" required>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -59,13 +59,16 @@
             </p>
             <p>
                 <label for="iesper">Você se considera esperto(a):</label>
-                <input type="range" name="esper" id="iesper" required min="1" max="3">
+                <input type="range" name="esper" id="iesper" required min="1" max="3" value="2" oninput="irange.innerHTML = Number(iesper.value)">
+                <output id="irange">2</output>
                 <br>
                 <label for="iboni">Você se acha bonito(a):</label>
-                <input type="range" name="boni" id="iboni" required min="1" max="3">
+                <input type="range" name="boni" id="iboni" required min="1" max="3" oninput="irange2.innerHTML = Number(iboni.value)">
+                <output id="irange2">2</output>
                 <br>
                 <label for="isoci">Você se considera sociável:</label>
-                <input type="range" name="soci" id="isoci" required min="1" max="3">
+                <input type="range" name="soci" id="isoci" required min="1" max="3" oninput="irange3.innerHTML = Number(isoci.value)">
+                <output id="irange3">2</output>
             </p>
         </fieldset>
         <fieldset id="field4">
