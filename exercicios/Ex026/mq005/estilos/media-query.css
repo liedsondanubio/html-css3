@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    /* Essa linha faz o menu hamburguer desaparecer em telas maiores */
+    i#burger {
+        display: none;
+    }
+/* Essa linha faz com que o menu padrão apareça normalmente */
+    menu {
+        display: block;
+    }
+/* Essa linha faz com que os links do menu fiquem lado a lado */
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
+
